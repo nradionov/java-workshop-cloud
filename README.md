@@ -7,7 +7,7 @@ Cloud configuration
 - Java 1.8
 - Docker
 
-##configuration-service
+## configuration-service
 ### build
 - cd ./configuration-service
 - mvn clean package
@@ -17,7 +17,7 @@ Cloud configuration
 ### verify
 - http://localhost:8088/reservation-service/master
 
-##eureka-server
+## eureka-server
 ### build
 - cd ./eureka-server
 - mvn clean package
@@ -27,14 +27,14 @@ Cloud configuration
 ### verify
 - http://localhost:8761/
 
-##rabbit-mq
-###run
+## rabbit-mq
+### run
 - docker run --rm -i -t --hostname rabbit --name rabbit -p 5672:5672 -p 8010:15672 rabbitmq:3-management
-###verify 
+### verify 
 - http://localhost:8010/
   
 ### 
-##reservation-service
+## reservation-service
 ### build
 - cd ./reservation-service
 - mvn clean package
@@ -44,7 +44,7 @@ Cloud configuration
 ### verify
 - http://localhost:8081/reservations
 
-##reservation-client
+## reservation-client
 ### build
 - cd ./reservation-client
 - mvn clean package
